@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bc768c4062.js" crossorigin="anonymous"></script>
     <title>To-Do</title>
 </head>
 <body>
+
+
+    <div class="board">
+        <header><h1>TODOLIST</h1></header>
+
+        <section class="search-area">
+            <input type="search" name="search-bar" id="search-bar" class="search-bar">
+            <button class="add">+</button>
+        </section>
+
+        <section class="item">
+            <div class="item-left">
+                <input type="checkbox" name="complete" id="complete" class="complete">
+                <p class="text">Finish what I'm doing.</p>
+            </div>
+        
+            <div class="item-right">
+                <i class="fa-solid fa-pen fa-xs"></i>
+                <i class="fa-solid fa-xmark fa-sm"></i>
+            </div>
+        </section>
+
+
+        <!-- <section class="item">
+            <div class="item-left">
+                <input type="checkbox" name="complete" id="complete">
+                <textarea name="text" id="text" cols="55" rows="2"></textarea>
+            </div>
+        
+            <div class="item-right">
+                <i class="fa-solid fa-pen fa-xs"></i>
+                <i class="fa-solid fa-xmark fa-sm"></i>
+            </div>
+        </section> -->
+        
+        <footer>
+            <div class="tasks-done"><p> 0 of 0 tasks done</p></div>
+            <button class="remove-checked">Remove checked</button>
+        </footer>
+        
+    </div>
     
 </body>
 </html>
